@@ -1,6 +1,7 @@
 from PIL import Image
 import numpy as np
 
+
 def ft_load(path: str) -> np.ndarray:
     """load image data and print it"""
     try:

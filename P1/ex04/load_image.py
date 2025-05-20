@@ -8,7 +8,6 @@ def ft_load(path: str) -> np.ndarray:
         with Image.open(path) as img:
             img = img.convert('RGB')
             img_array = np.array(img)
-            print(f"The shape of image is: {img_array.shape}")
             return (img_array)
     except FileNotFoundError:
         print("Error: File not found.")
