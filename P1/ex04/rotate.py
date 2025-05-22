@@ -4,7 +4,7 @@ from load_image import ft_load
 
 
 def main():
-    img_array = ft_load("../animal.jpeg")
+    img_array = ft_load("../animal.peg")
     if img_array is None:
         return
 
