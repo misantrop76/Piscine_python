@@ -1,6 +1,7 @@
 import pandas as p
 
-def load(path: str) -> p :
+
+def load(path: str) -> p:
     """
 Takes a path as argument, writes the dimensions of the data set
 and returns it

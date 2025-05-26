@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from load_csv import load
 
+
 def parse_number(value):
     if isinstance(value, str):
         if value.endswith('k'):
@@ -21,7 +22,7 @@ Display France information
         print("Erreur lors du chargement des données.")
         return
     if "France" not in df['country'].values:
-        print(f"Aucune information pour la France")
+        print("Aucune information pour la France")
         return
     data_fr = df[df['country'] == "France"].iloc[0]
     data_be = df[df['country'] == "Belgium"].iloc[0]
@@ -46,6 +47,7 @@ Display France information
         labels=[f"{int(y/1000000)}M" for y in range(20, 80000000, 20000000)]
     )
     plt.show()
+
 
 if __name__ == "__main__":
     main()
